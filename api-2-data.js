@@ -40,9 +40,9 @@ const challenge2API = (data) => {
     div.classList.add("div");
     div.innerHTML = ` 
     <div id="" class="card" style="width: 18rem;">
-        <img src="${element.imageURL}" class="card-img-top" alt="...">
+        <img class="p-2" src="${element.imageURL}" class="card-img-top" alt="...">
         <div id="card-body" class="card-body">
-            <h5 id="card-title" class="card-title">${element.name}</h5>
+            <h2 id="card-title" class="card-title text-xl font-semibold">Model: ${element.name}</h2>
             <p id="card-text" class="card-text mb-2">${element.description}</p>
             <a id="card-btn" href="#" class="btn btn-primary">Price: $${element.price}</a>
         </div>
